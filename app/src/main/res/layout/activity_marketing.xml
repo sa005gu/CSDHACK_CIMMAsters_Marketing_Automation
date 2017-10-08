@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:background="@drawable/mydesign"
+    tools:context="com.example.sa005gu.swaggersdksamples.MarketingActivity">
+
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/ScrollView01"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@drawable/mydesign">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+
+
+        tools:context="com.example.sa005gu.swaggersdksamples.MainActivity"
+        >
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/pb_logo_white"
+        android:layout_gravity="center_horizontal"
+        android:layout_alignParentTop="true"
+        android:id="@+id/ImgView"
+        />
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/emp1View"
+            android:orientation="vertical"
+            android:layout_below="@+id/ImgView"
+            android:weightSum="1">
+        </LinearLayout>
+
+
+        <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/View1"
+        android:orientation="vertical"
+        android:layout_below="@+id/emp1View"
+        android:weightSum="1">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Hello"
+            android:textColor="#ffffff"
+            android:id="@+id/text1"
+            android:layout_below="@+id/View1"
+
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+
+
+            <LinearLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:id="@+id/emp2View"
+                android:orientation="horizontal"
+                android:layout_below="@+id/View1"
+                android:weightSum="1">
+            </LinearLayout>
+
+        <WebView  xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/webview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/emp2View"
+            />
+
+        <Button
+            android:id="@+id/buttonMail"
+            style="@style/Widget.AppCompat.Button"
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_below="@+id/webview"
+            android:textColor="#ffffff"
+            android:background="@drawable/round"
+
+            android:text=" Send Campaign "
+            android:textAppearance="@style/TextAppearance.AppCompat.Button"
+            android:visibility="visible" />
+    </LinearLayout>
+    </LinearLayout>
+    </ScrollView>
+</android.support.constraint.ConstraintLayout>

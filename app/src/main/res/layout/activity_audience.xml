@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/mydesign"
+    tools:context="com.example.sa005gu.swaggersdksamples.AudienceActivity">
+
+
+            <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="368dp"
+                android:layout_height="495dp"
+                android:orientation="vertical"
+                android:paddingBottom="@dimen/activity_vertical_margin"
+                android:paddingLeft="@dimen/activity_horizontal_margin"
+                android:paddingRight="@dimen/activity_horizontal_margin"
+                android:paddingTop="@dimen/activity_vertical_margin"
+                android:background="@drawable/mydesign"
+                tools:layout_editor_absoluteY="8dp"
+                tools:layout_editor_absoluteX="8dp">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/pb_logo_white"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_alignParentTop="true"
+                    android:id="@+id/ImgView"
+                    />
+
+                <LinearLayout
+
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+                    android:id="@+id/emp1View"
+                    android:orientation="horizontal"
+                    android:layout_below="@+id/ImgView"
+                    android:weightSum="1">
+                </LinearLayout>
+
+
+
+                <LinearLayout
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/emp3View"
+                    android:orientation="vertical"
+                    android:layout_below="@+id/emp1View"
+                    android:weightSum="1">
+
+
+
+
+
+
+
+
+
+                <Button
+                    android:id="@+id/buttonValidate1"
+                    style="@style/Widget.AppCompat.Button"
+                    android:layout_width="250dp"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_weight="0.23"
+                    android:textColor="#ffffff"
+                    android:layout_below="@+id/emp2View"
+                    android:background="@drawable/round"
+                    android:text="  Target Existing Customers  "
+                    android:textAppearance="@style/TextAppearance.AppCompat.Button"
+                    android:layout_centerHorizontal="true"
+                    android:visibility="visible" />
+
+                    <LinearLayout
+
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:id="@+id/v1"
+                        android:orientation="horizontal"
+                        android:layout_below="@+id/ImgView"
+                        android:weightSum="1">
+                    </LinearLayout>
+
+                <Button
+                    android:id="@+id/buttonValidate2"
+                    style="@style/Widget.AppCompat.Button"
+                    android:layout_width="250dp"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_weight="0.23"
+                    android:textColor="#ffffff"
+                    android:layout_below="@+id/emp2View"
+                    android:background="@drawable/round"
+                    android:text="  Target New Customers  "
+                    android:textAppearance="@style/TextAppearance.AppCompat.Button"
+                    android:layout_centerHorizontal="true"
+                    android:visibility="visible" />
+                </LinearLayout>
+
+
+
+            </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>
